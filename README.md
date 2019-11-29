@@ -12,20 +12,29 @@
 ## 运行服务
 
 ```bash
-# SITE_DOMAIN   : 你的域名
-# V2RAY_TOKEN   : v2ray 的 client id
-# V2RAY_WS_PATH : v2ray ws 混淆的路径
+#!/usr/bin/env bash
+
+# 域名
+SITE_DOMAIN=www.sample.com
+
+# v2ray 的 client id
+V2RAY_TOKEN=00000000-0000-0000-0000-000000000000
+
+# v2ray ws 混淆的路径
+V2RAY_WS_PATH=/secret/path
 
 docker run -d --restart=always \
-    --name dnv \
+    --name docker-nginx-v2ray \
     -v /root/v2ray/cert:/data/cert \
     -p 80:80 \
     -p 443:443 \
-    -e SITE_DOMAIN=www.sample.com \
-    -e V2RAY_TOKEN=00000000-0000-0000-0000-000000000000 \
-    -e V2RAY_WS_PATH=/secret/path \
+    -e SITE_DOMAIN=${SITE_DOMAIN} \
+    -e V2RAY_TOKEN=${V2RAY_TOKEN} \
+    -e V2RAY_WS_PATH=${V2RAY_WS_PATH} \
     gongshw/docker-nginx-v2ray
 ```
+
+访问 `https://${SITE_DOMAIN}`, 可以打开一个静态网站.
 
 默认会在`./cert/${SITE_DOMAIN}` 下生成自签名的证书(`certificate.crt`)和私钥(`private.key`)文件.
 
