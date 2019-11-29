@@ -59,6 +59,9 @@ start_nginx() {
     sed \
         -e "s:\${V2RAY_PORT}:${V2RAY_PORT}:" \
         -e "s:\${V2RAY_WS_PATH}:${V2RAY_WS_PATH}:" \
+        -e "s:\${SITE_DOMAIN}:${SITE_DOMAIN}:" \
+        -e "s:\${CERTIFICATE_FILE}:${CERTIFICATE_FILE}:" \
+        -e "s:\${CERTIFICATE_KEY_FILE}:${CERTIFICATE_KEY_FILE}:" \
         /conf/nginx/site.conf.template >${NGINX_CONF}
 
     echo "starting nginx at port 80(http)&443(https)"

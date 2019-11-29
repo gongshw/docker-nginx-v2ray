@@ -1,10 +1,10 @@
 server {
     listen 443 ssl default_server;
-    server_name localhost;
+    server_name ${SITE_DOMAIN};
     root /data/www;
 
-    ssl_certificate /data/cert/localhost/certificate.crt;
-    ssl_certificate_key /data/cert/localhost/private.key;
+    ssl_certificate ${CERTIFICATE_FILE};
+    ssl_certificate_key ${CERTIFICATE_KEY_FILE};
 
     ssl_session_cache shared:le_nginx_SSL:10m;
     ssl_session_timeout 1440m;
