@@ -1,8 +1,8 @@
 # docker 内部署 nginx + v2ray + ws + tls
 
-![GitHub](https://img.shields.io/github/license/gongshw/docker-nginx-v2ray)
-![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/gongshw/docker-nginx-v2ray)
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/gongshw/docker-nginx-v2ray)
+[![GitHub](https://img.shields.io/github/license/gongshw/docker-nginx-v2ray)](https://github.com/gongshw/docker-nginx-v2ray/blob/master/LICENSE)
+[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/gongshw/docker-nginx-v2ray)](https://hub.docker.com/repository/docker/gongshw/docker-nginx-v2ray)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/gongshw/docker-nginx-v2ray)](https://hub.docker.com/repository/docker/gongshw/docker-nginx-v2ray/timeline)
 
 
 ## 安装并启动 docker 服务
