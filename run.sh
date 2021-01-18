@@ -40,7 +40,7 @@ start_v2ray() {
         -e "s:\${V2RAY_WS_PATH}:${V2RAY_WS_PATH}:" \
         /conf/v2ray/config.json.template >${V2RAY_CONF}
     echo "starting v2ray at port ${V2RAY_PORT}"
-    /usr/bin/v2ray/v2ray -config ${V2RAY_CONF}
+    /usr/bin/v2ray -config ${V2RAY_CONF}
 }
 
 start_nginx() {
@@ -76,6 +76,7 @@ start_nginx() {
         /conf/nginx/site.conf.template >${NGINX_CONF}
 
     echo "starting nginx at port 80(http)&443(https)"
+    mkdir -p /run/nginx
     nginx && echo "nginx started"
 }
 

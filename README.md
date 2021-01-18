@@ -55,11 +55,7 @@ docker run -d --restart=always \
 
 ### /data/www
 
-伪装的静态站点. 
-
-默认是 [https://github.com/daneden/animate.css/tree/gh-pages](https://daneden.github.io/animate.css/). 
-
-可随意替换.
+伪装的静态站点. 可随意替换.
 
 ## 内部端口
 
