@@ -29,8 +29,8 @@ DHPARAM_FILE="${CERTIFICATE_DIR}/dhparam.pem"
 V2RAY_PORT=12345
 
 NGINX_DIR="/etc/nginx"
-mkdir -p "${NGINX_DIR}/conf.d"
-NGINX_CONF="${NGINX_DIR}/conf.d/default.conf"
+mkdir -p "${NGINX_DIR}/modules"
+NGINX_CONF="${NGINX_DIR}/modules/default.conf"
 V2RAY_CONF="${DATA_DIR}/v2ray/config.json"
 
 start_v2ray() {
