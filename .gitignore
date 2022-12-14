@@ -1,3 +1,5 @@
 *.crt
 *.key
 *.pem
+
+.DS_STORE

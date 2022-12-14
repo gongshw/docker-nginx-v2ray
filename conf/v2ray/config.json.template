@@ -1,4 +1,7 @@
 {
+  "log": {
+    "loglevel": "info"
+  },
   "inbounds": [
     {
       "port": ${V2RAY_PORT},
@@ -9,7 +12,7 @@
           {
             "id": "${V2RAY_TOKEN}",
             "level": 1,
-            "alterId": 64
+            "alterId": 0
           }
         ]
       },
