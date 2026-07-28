@@ -1,5 +1,8 @@
 # docker 内部署 nginx + v2ray + ws + tls
 
+> **⚠️ DEPRECATED** — This project is no longer maintained.  
+> Use **[cattiva](https://github.com/gongshw/cattiva)** instead — a modern Docker Compose stack with Traefik + Xray, supporting VLESS+Reality, VMess+WS+TLS, and Cloudflare DNS-01 ACME.
+
 [![GitHub](https://img.shields.io/github/license/gongshw/docker-nginx-v2ray)](https://github.com/gongshw/docker-nginx-v2ray/blob/master/LICENSE)
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/gongshw/docker-nginx-v2ray)](https://hub.docker.com/r/gongshw/docker-nginx-v2ray)
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/gongshw/docker-nginx-v2ray)](https://hub.docker.com/r/gongshw/docker-nginx-v2ray/builds)
